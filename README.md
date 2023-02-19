@@ -6,7 +6,7 @@
 
 <br />
 
-This app features:
+This a work in progress however this app will feature:
 
 - See all countries from the API on the homepage.
 - Search for a country.
