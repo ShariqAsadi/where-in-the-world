@@ -17,7 +17,8 @@ module.exports = {
         'light-background': 'hsl(0, 0%, 98%)',
       },
       boxShadow: {
-        elements: '0px 2px 4px rgba(0, 0, 0, 0.0562443)',
+        elements: '0px 2px 4px rgba(0, 0, 0, 0.1)',
+        search: '0px 2px 9px rgba(0, 0, 0, 0.08)',
       },
     },
   },

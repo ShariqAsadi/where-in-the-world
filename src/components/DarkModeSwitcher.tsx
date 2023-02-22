@@ -24,7 +24,7 @@ export default function DarkModeSwitcher() {
   return (
     <span className='font-semibold text-light-text text-base dark:text-white'>
       <button
-        className='flex justify-center items-center gap-2'
+        className='flex justify-center items-center gap-2 sm:text-base text-xs'
         onClick={handleToggle}
       >
         {isLightMode ? <RiSunLine /> : <RiMoonLine />}
