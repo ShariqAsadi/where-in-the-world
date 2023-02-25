@@ -1,5 +1,8 @@
 import Countries from '@/components/Countries';
+import { getCountries } from '@/utils/api';
 
-export default function Home() {
-  return <Countries />;
+export default async function Home() {
+  const countries = await getCountries();
+
+  return <Countries countries={countries} />;
 }
