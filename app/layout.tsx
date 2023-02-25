@@ -10,6 +10,12 @@ const nunitoSans = Nunito_Sans({
   weight: ['300', '600', '800'],
 });
 
+export const metadata = {
+  title: 'Where in the world',
+  description:
+    'A list of all the countries in the world with all their details',
+};
+
 export default function RootLayout({ children }: BaseChildren) {
   return (
     <html lang='en' className={nunitoSans.className}>
