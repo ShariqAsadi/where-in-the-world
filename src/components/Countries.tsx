@@ -14,7 +14,7 @@ export default function AllCountries(props: CountriesProps) {
   return (
     <div className='sm:px-20 sm:pt-12 px-4 pt-6'>
       <Search value={search} handleSearch={setSearch} />
-      <section className='flex gap-[75px] flex-wrap mt-12'>
+      <section className='flex gap-[75px] flex-wrap mt-12 justify-center'>
         {countries.map((country) => {
           const { name, flags, capital, population, region } = country;
           return (
