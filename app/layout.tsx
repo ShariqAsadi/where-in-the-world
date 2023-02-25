@@ -1,6 +1,6 @@
 import './globals.css';
 
-import { Nunito_Sans } from "next/font/google";
+import { Nunito_Sans } from 'next/font/google';
 import { BaseChildren } from '@/types/common';
 import Providers from './Providers';
 import Navbar from '@/components/Navbar';
