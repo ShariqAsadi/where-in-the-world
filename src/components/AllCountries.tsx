@@ -9,13 +9,21 @@ interface CountriesProps {
 }
 
 export default function AllCountries(props: CountriesProps) {
-  const [search, setSearch] = useState('');
   const { countries } = props;
+  const [searchedCountries, setSearchedCountries] = useState(countries);
+
+  const handleSearch = (value: string) => {
+    const filteredCountries = countries.filter((country) =>
+      country.name.common.toLowerCase().includes(value)
+    );
+    setSearchedCountries(filteredCountries);
+  };
+
   return (
     <div className='sm:px-20 sm:pt-12 px-4 pt-6'>
-      <Search value={search} handleSearch={setSearch} />
+      <Search handleSearch={handleSearch} />
       <section className='flex gap-[75px] flex-wrap mt-12 justify-center'>
-        {countries.map((country) => {
+        {searchedCountries.map((country) => {
           const { name, flags, capital, population, region } = country;
           return (
             <CountryCard
